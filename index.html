@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Your one-stop destination for free online tools. Compress images, convert PDFs, and more!">
+    <meta name="keywords" content="online tools, image tools, PDF tools, compress images, convert PDFs, free tools">
+    <meta name="author" content="Your Name">
+    <title>Online Tools - Free Image & PDF Tools</title>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        /* Global Styles */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            line-height: 1.6;
+        }
+
+        a {
+            text-decoration: none;
+            color: inherit;
+        }
+
+        /* Header */
+        header {
+            background: linear-gradient(135deg, #4CAF50, #45a049);
+            color: white;
+            padding: 60px 20px;
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-family: 'Montserrat', sans-serif;
+            font-size: 2.8rem;
+            font-weight: 700;
+            margin-bottom: 10px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Main Content */
+        main {
+            padding: 40px 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        /* Tools Grid */
+        .tools-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+            margin-top: 30px;
+        }
+
+        .tool-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .tool-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+        }
+
+        .tool-card i {
+            font-size: 2.8rem;
+            color: #4CAF50;
+            margin-bottom: 20px;
+            transition: color 0.3s ease;
+        }
+
+        .tool-card:hover i {
+            color: #45a049;
+        }
+
+        .tool-card h3 {
+            font-size: 1.5rem;
+            font-weight: 600;
+            margin-bottom: 10px;
+            color: #333;
+        }
+
+        .tool-card p {
+            font-size: 0.95rem;
+            color: #666;
+            line-height: 1.5;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #333, #222);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 60px;
+        }
+
+        footer p {
+            margin: 0;
+            font-size: 0.95rem;
+        }
+
+        /* Responsive Design */
+        @media (max-width: 768px) {
+            header h1 {
+                font-size: 2.2rem;
+            }
+
+            header p {
+                font-size: 1rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+                gap: 20px;
+            }
+
+            .tool-card {
+                padding: 20px;
+            }
+
+            .tool-card h3 {
+                font-size: 1.3rem;
+            }
+        }
+
+        @media (max-width: 480px) {
+            header h1 {
+                font-size: 2rem;
+            }
+
+            .tools-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .tool-card {
+                padding: 15px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <h1>Online Tools</h1>
+        <p>Your one-stop destination for free online tools. Compress images, convert PDFs, and more!</p>
+    </header>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Tools Grid -->
+        <div class="tools-grid">
+            <!-- Image Tools -->
+            <div class="tool-card">
+                <i class="fas fa-image"></i>
+                <h3>Image Compressor</h3>
+                <p>Compress and optimize your images for web use with adjustable quality settings.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-image"></i>
+                <h3>Image Converter</h3>
+                <p>Convert images between formats like JPG, PNG, and WebP effortlessly.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-crop"></i>
+                <h3>Image Resizer</h3>
+                <p>Resize images to specific dimensions without losing quality.</p>
+            </div>
+
+            <!-- PDF Tools -->
+            <div class="tool-card">
+                <i class="fas fa-file-pdf"></i>
+                <h3>PDF Compressor</h3>
+                <p>Reduce the size of your PDF files without compromising quality.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-export"></i>
+                <h3>PDF to Word</h3>
+                <p>Convert PDF files to editable Word documents quickly and easily.</p>
+            </div>
+            <div class="tool-card">
+                <i class="fas fa-file-import"></i>
+                <h3>Word to PDF</h3>
+                <p>Convert Word documents to PDF format in just a few clicks.</p>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2023 Online Tools. All rights reserved.</p>
+    </footer>
+</body>
+</html>
