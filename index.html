@@ -8,7 +8,7 @@
     <meta name="author" content="HRIDOY BHUIYAN">
     <title>TRIO PROFIT CITY - SIGNAL</title>
     <!-- Google Fonts -->
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&family=Montserrat:wght@700&family=Stylish&family=Dancing+Script:wght@700&family=Roboto+Slab:wght@700&family=Playfair+Display:wght@700&display=swap" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <style>
@@ -33,24 +33,73 @@
 
         /* Header */
         header {
-            background: linear-gradient(135deg, #4CAF50, #45a049);
-            color: white;
+            background: linear-gradient(
+                135deg,
+                #FFFFFF, /* White */
+                #FFC0CB, /* Pink */
+                #FF69B4  /* Scalar (a shade of pink) */
+            );
+            color: black; /* Text color */
             padding: 60px 20px;
             text-align: center;
             box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            position: relative;
+            overflow: hidden;
+        }
+
+        /* Sedu Background Effect */
+        header::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: url('https://www.transparenttextures.com/patterns/light-wool.png'); /* Subtle texture */
+            opacity: 0.3; /* Adjust opacity for subtlety */
+            z-index: 1;
         }
 
         header h1 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
+            font-family: 'Playfair Display', serif; /* Stylish and bold font for the title */
+            font-size: 3.5rem;
             font-weight: 700;
             margin-bottom: 10px;
+            position: relative;
+            z-index: 2;
+            animation: slideIn 1.5s ease-in-out; /* Text animation */
+            color: black; /* Black text */
         }
 
         header p {
-            font-size: 1.1rem;
+            font-family: 'Roboto Slab', serif; /* Stylish font for the paragraph */
+            font-size: 1.2rem;
             opacity: 0.9;
-            color: #e0f7e0; /* Light green text */
+            color: black; /* Black text */
+            position: relative;
+            z-index: 2;
+            animation: fadeIn 2s ease-in-out; /* Text animation */
+        }
+
+        /* Text Animation */
+        @keyframes slideIn {
+            0% {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            100% {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+
+        @keyframes fadeIn {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
 
         /* Main Content */
@@ -106,19 +155,6 @@
             line-height: 1.5;
         }
 
-        /* Custom Colors */
-        .red-text {
-            color: red;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
-        .green-text {
-            color: green;
-            font-weight: bold;
-            text-transform: uppercase;
-        }
-
         /* Footer */
         footer {
             background: linear-gradient(135deg, #333, #222);
@@ -137,7 +173,7 @@
         /* Responsive Design */
         @media (max-width: 768px) {
             header h1 {
-                font-size: 2.2rem;
+                font-size: 2.5rem;
             }
 
             header p {
