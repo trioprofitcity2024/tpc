@@ -21,8 +21,8 @@
 
         body {
             font-family: 'Poppins', sans-serif;
-            background-color: #f9f9f9;
-            color: #333;
+            background: linear-gradient(135deg, #222, #444); /* Dark Gradient Background */
+            color: #fff;
             line-height: 1.6;
         }
 
@@ -50,7 +50,7 @@
         header p {
             font-size: 1.1rem;
             opacity: 0.9;
-            color: #e0f7e0; /* Light green text for better readability */
+            color: #e0f7e0; /* Light green text */
         }
 
         /* Main Content */
@@ -72,14 +72,14 @@
             background: white;
             padding: 25px;
             border-radius: 15px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
             text-align: center;
             transition: transform 0.3s ease, box-shadow 0.3s ease;
         }
 
         .tool-card:hover {
             transform: translateY(-10px);
-            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3);
         }
 
         .tool-card i {
@@ -93,17 +93,17 @@
             color: #45a049;
         }
 
-        .tool-card h3 {
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 10px;
-            color: #4CAF50; /* Green text for headings */
+        /* Custom Colors */
+        .red-text {
+            color: red;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
-        .tool-card p {
-            font-size: 0.95rem;
-            color: #666;
-            line-height: 1.5;
+        .green-text {
+            color: green;
+            font-weight: bold;
+            text-transform: uppercase;
         }
 
         /* Footer */
@@ -180,19 +180,14 @@
                 </div>
             </a>
 
-            <!-- QUOTEX SIGNAL -->
+            <!-- QUOTEX LIVE SIGNAL -->
             <a href="#" target="_blank" class="tool-link">
                 <div class="tool-card">
                     <i class="fas fa-file-image"></i>
-                    <h3>QUOTEX LIVE SIGNAL</h3>
+                    <h3 class="green-text">QUOTEX LIVE SIGNAL</h3>
                     <p>Quotex LIVE Signal provides accurate trading predictions for forex, crypto, and options. Expert analysts generate these signals to help you make the right entry and exit decisions for maximum profit.</p>
                 </div>
             </a>
-
-
-
-
-            
         </div>
     </main>
 
